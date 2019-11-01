@@ -1,0 +1,86 @@
+<header class="container-fluid">
+    <div class="col-md-12">
+      <div class="row">
+          <div class="col-md-11">
+            <h1>Angular Workshop</h1>
+          </div>
+          <div class="col-md-1">
+            <div class="row">
+                  <nav class=" col-md-12" (click) = openMenu();>
+                    <i class="fas fa-bars"></i>
+                  </nav>
+            </div>
+          </div>
+      </div>
+    </div>
+  
+    <div class="main-menu col-md-3" *ngIf = isMenu>
+      <div class="row top">
+        <div class="col-md-6">
+            <p>Explore</p>
+        </div>
+        <div class="col-md-6">
+            <i class="fas fa-times" (click) = closeMenu();></i>
+        </div>
+      </div>
+        <ul class="menu">
+          <li><a >Home</a></li>
+          <li [ngClass]="isAccordion ? 'selected' : ''"><a href="https://sites.ey.com/sites/DS_Tax_ITS/Pages/communityservices.aspx" target="_blank">Services</a>
+            <i *ngIf="!isAccordion" class="fas fa-angle-down arrow" (click) = openOrCloseAccordion();></i>
+            <i *ngIf="isAccordion" class="fas fa-angle-up arrow" (click) = openOrCloseAccordion();></i>
+  
+          </li>
+            <ul class="submenu" *ngIf = isAccordion>
+              <li ><a target="_blank">Offering</a></li>
+            </ul>
+          <li><a href="https://internal.ey.net/sites/navigateitts/americas/Pages/Beps20.aspx" target="_blank">BEPS 2.0</a></li>
+          <li><a href="https://sites.ey.com/sites/DS_Tax_ITS/Pages/GoToMarket.aspx" target="_blank">Go-To-Market</a></li>
+          <li><a href="https://sites.ey.com/sites/DS_Tax_ITS/Pages/ToolsAndResources.aspx" target="_blank">Tools & Resources</a></li>
+          <li><a href="https://sites.ey.com/sites/DS_Tax_ITS/Pages/LearningAndTalent.aspx" target="_blank">Learning & Talent</a></li>
+          <li><a >Key Contacts</a></li>
+          <li><a href="https://sites.ey.com/sites/DS_Tax_ITS/Pages/AboutUs.aspx" target="_blank">About Us</a></li>
+          <!--<li><a href="#">Technology & Innovation</a></li>-->
+        </ul>
+  
+        <div class="region" [ngClass]="!isRegion ? 'closed' : 'opened'">
+            <div class="regionToggel">
+              <div class="row">
+                  <div class="col-md-8">
+                      <p>Find your location</p>
+                    </div>
+                    <div class="col-md-4">
+                        <i class="fas fa-angle-up"></i>
+                    </div>
+                  </div>
+              </div>
+  
+  
+              <ul>
+                <li>
+                  <div class="region-subtitle">Current Site</div>
+                  <div class="row" style="font-weight: 300; font-size: 14px;">
+                    <div class="col-md-6">
+                        <i class="fas fa-globe"></i><a> Global</a>
+                    </div>
+                    <div class="col-md-6">
+                        <span *ngIf="!isRegion; else elseTick" class="region-selector" >Change</span>
+                        <ng-template #elseTick> <span> <i class="fas fa-check"></i></span></ng-template>
+                    </div>
+                  </div>
+                </li>
+                <li>
+                    <div class="region-subtitle">Visit other sites</div>
+                  <div class="row" style="font-weight: 300; font-size: 14px;">
+                    <div class="col-md-6">
+                      <i class="fa fa-globe-global"></i><a href="https://internal.ey.net/sites/navigateitts/americas" target="_blank"> Americas</a>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+  
+        </div>
+  
+  
+    </div>
+  </header>
+  
