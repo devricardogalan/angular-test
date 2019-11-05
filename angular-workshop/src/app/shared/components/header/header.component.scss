@@ -1,7 +1,6 @@
 header {
     background-color:#24282d;
     padding:0;
-    position:fixed;
     z-index:999;
     
     a{
@@ -18,8 +17,7 @@ header {
         font-size: 1rem;
         margin: 0;
         vertical-align: bottom;
-        border-left: 1px solid white;
-        padding:10px;
+        padding:20px;
     }
 
     .search {
@@ -153,7 +151,7 @@ header {
                     }
 
                     li:hover a {
-                        color:#ffe600;
+                        color:yellow;
                     }
                 }
 
@@ -162,11 +160,11 @@ header {
             }
 
             li:hover {
-                border-left: 2px solid #ffe600;
+                border-left: 2px solid #fafafa;
             }
 
             .selected {
-                border-left: 2px solid #ffe600;
+                border-left: 2px solid #fafafa;
             }
         }
 

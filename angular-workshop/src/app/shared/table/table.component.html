@@ -1,0 +1,39 @@
+<div *ngIf="isLoaded" >
+    <table   class="table">
+      <thead >
+        <tr>
+          <th (click)="sortByDueDate()" scope="col">Date</th>
+          <th scope="col">Title</th>
+          <th scope="col">Description</th>
+          <th scope="col">Author</th>
+          <th scope="col">Contact</th>
+        </tr>
+      </thead>
+      <tbody >
+        <tr [ngStyle]="{'display': displayRows(i) }"   *ngFor="let row of publications; index as i">
+          <td class="table-cells">{{row.date | date:'yyyy-MM-dd'}}</td>
+          <td class="table-cells" >{{row.name}}</td>
+          <td class="table-cells">{{row.description}}</td>
+          <td class="table-cells" >{{row.firstname + ' ' + row.lastname}}</td>
+          <td class="table-cells">{{row.email}}</td>                  
+        </tr>
+      </tbody>
+    </table>
+  </div>
+<div>
+  <nav class=navPages *ngIf="publications?.length>10">
+    <ul class="pagination">
+      <li class="page-item">
+        <a class="page-link page-previous" (click)="onClickPrevious(numPages.length)">
+          <i class="fas fa-angle-left"></i>
+        </a>
+      </li>
+      <li class="page-item" *ngFor="let num of numPages; index as i"><a class="page-link" [ngClass]="checkPageActive(num)" (click)="onClickPagination($event)">{{num}}</a></li>
+      <li class="page-item">
+        <a class="page-link page-next" (click)="onClickNext(numPages.length)">
+          <i class="fas fa-angle-right"></i>
+        </a>
+      </li>
+    </ul>
+  </nav>
+</div>

@@ -1,64 +1,277 @@
-{
-    "peliculas": [
+{ 
+    "docs": [
       {
-        "id": 1,
-        "nombre": "El sexto sentido",
-        "director": "M. Night Shyamalan",
-        "clasificacion": "Drama"
+        "name": "doc1",
+        "description": "doc1",
+        "date": "10/12/2019",
+        "firstname":"Ricardo",
+        "lastname":"Galan",
+        "email":"devricardogalan@gmail.com"
       },
       {
-        "id": 2,
-        "nombre": "Pulp Fiction",
-        "director": "Tarantino",
-        "clasificacion": "Acción"
+        "name": "doc2",
+        "description": "movie",
+        "date": "10/12/2019",
+        "firstname":"Ricardo",
+        "lastname":"Galan",
+        "email":"devricardogalan@gmail.com"
       },
       {
-        "id": 3,
-        "nombre": "Todo Sobre Mi Madre",
-        "director": "Almodobar",
-        "clasificacion": "Drama"
+        "name": "doc3",
+        "description": "doc3",
+        "date": "10/12/2019",
+        "firstname":"Ricardo",
+        "lastname":"Galan",
+        "email":"devricardogalan@gmail.com"
       },
       {
-        "id": 4,
-        "nombre": "300",
-        "director": "Zack Snyder",
-        "clasificacion": "Acción"
+        "name": "doc4",
+        "description": "doc4",
+        "date": "10/12/2019",
+        "firstname":"Ricardo",
+        "lastname":"Galan",
+        "email":"devricardogalan@gmail.com"
       },
       {
-        "id": 5,
-        "nombre": "El silencio de los corderos",
-        "director": "Jonathan Demme",
-        "clasificacion": "Drama"
+        "name": "doc5",
+        "description": "doc5",
+        "date": "10/12/2019",
+        "firstname":"Ricardo",
+        "lastname":"Galan",
+        "email":"devricardogalan@gmail.com"
       },
       {
-        "id": 6,
-        "nombre": "Forrest Gump",
-        "director": "Robert Zemeckis",
-        "clasificacion": "Comedia"
+        "name": "doc6",
+        "description": "doc6",
+        "date": "10/12/2019",
+        "firstname":"Ricardo",
+        "lastname":"Galan",
+        "email":"devricardogalan@gmail.com"
       },
       {
-        "id": 7,
-        "nombre": "Las Hurdes",
-        "director": "Luis Buñuel",
-        "clasificacion": "Documental"
+        "name": "doc7",
+        "description": "doc7",
+        "date": "10/12/2019",
+        "firstname":"Ricardo",
+        "lastname":"Galan",
+        "email":"devricardogalan@gmail.com"
+      },
+      {
+        "name": "doc8",
+        "description": "doc8",
+        "date": "11/12/2019",
+        "firstname":"Ricardo",
+        "lastname":"Galan",
+        "email":"devricardogalan@gmail.com"
+      },
+      {
+        "name": "doc9",
+        "description": "doc9",
+        "date": "10/11/2019",
+        "firstname":"Ricardo",
+        "lastname":"Galan",
+        "email":"devricardogalan@gmail.com"
+      },
+      {
+        "name": "doc10",
+        "description": "doc10",
+        "date": "10/09/2019",
+        "firstname":"Ricardo",
+        "lastname":"Galan",
+        "email":"devricardogalan@gmail.com"
+      },
+      {
+        "name": "doc11",
+        "description": "doc11",
+        "date": "10/12/2018",
+        "firstname":"Ricardo",
+        "lastname":"Galan",
+        "email":"devricardogalan@gmail.com"
+      },
+      {
+        "name": "doc12",
+        "description": "doc12",
+        "date": "10/10/2019",
+        "firstname":"Ricardo",
+        "lastname":"Galan",
+        "email":"devricardogalan@gmail.com"
+      },
+      {
+        "name": "doc13",
+        "description": "doc13",
+        "date": "10/04/2019",
+        "firstname":"Ricardo",
+        "lastname":"Galan",
+        "email":"devricardogalan@gmail.com"
+      },
+      {
+        "name": "doc14",
+        "description": "doc14",
+        "date": "10/12/2017",
+        "firstname":"Ricardo",
+        "lastname":"Galan",
+        "email":"devricardogalan@gmail.com"
+      },
+      {
+        "name": "doc1",
+        "description": "doc1",
+        "date": "10/12/2016",
+        "firstname":"Elias",
+        "lastname":"Villasmil",
+        "email":"eliasvillasmil@gmail.com"
+      },
+      {
+        "name": "doc2",
+        "description": "movie",
+        "date": "10/12/2019",
+        "firstname":"Elias",
+        "lastname":"Villasmil",
+        "email":"eliasvillasmil@gmail.com"
+      },
+      {
+        "name": "doc3",
+        "description": "doc3",
+        "date": "10/12/2019",
+        "firstname":"Elias",
+        "lastname":"Villasmil",
+        "email":"eliasvillasmil@gmail.com"
+      },
+      {
+        "name": "doc4",
+        "description": "doc4",
+        "date": "10/12/2019",
+        "firstname":"Stefany",
+        "lastname":"Moreno",
+        "email":"stefanymoreno@gmail.com"
+      },
+      {
+        "name": "doc5",
+        "description": "doc5",
+        "date": "10/12/2019",
+        "firstname":"Stefany",
+        "lastname":"Moreno",
+        "email":"stefanymoreno@gmail.com"
+      },
+      {
+        "name": "doc6",
+        "description": "doc6",
+        "date": "10/12/2019",
+        "firstname":"Stefany",
+        "lastname":"Moreno",
+        "email":"stefanymoreno@gmail.com"
+      },
+      {
+        "name": "doc7",
+        "description": "doc7",
+        "date": "10/12/2019",
+        "firstname":"Stefany",
+        "lastname":"Moreno",
+        "email":"stefanymoreno@gmail.com"
+      },
+      {
+        "name": "doc8",
+        "description": "doc8",
+        "date": "11/12/2019",
+        "firstname":"Stefany",
+        "lastname":"Moreno",
+        "email":"stefanymoreno@gmail.com"
+      },
+      {
+        "name": "doc9",
+        "description": "doc9",
+        "date": "10/11/2019",
+        "firstname":"Gustavo",
+        "lastname":"Gardella",
+        "email":"gustavogardella@gmail.com"
+      },
+      {
+        "name": "doc10",
+        "description": "doc10",
+        "date": "10/09/2019",
+        "firstname":"Gustavo",
+        "lastname":"Gardella",
+        "email":"gustavogardella@gmail.com"
+      },
+      {
+        "name": "doc11",
+        "description": "doc11",
+        "date": "10/12/2018",
+        "firstname":"Gustavo",
+        "lastname":"Gardella",
+        "email":"gustavogardella@gmail.com"
+      },
+      {
+        "name": "doc12",
+        "description": "doc12",
+        "date": "10/10/2019",
+        "firstname":"Gustavo",
+        "lastname":"Gardella",
+        "email":"gustavogardella@gmail.com"
+      },
+      {
+        "name": "doc13",
+        "description": "doc13",
+        "date": "10/04/2019",
+        "firstname":"Jose",
+        "lastname":"Villanueva",
+        "email":"josevillanueva@gmail.com"
+      },
+      {
+        "name": "doc14",
+        "description": "doc14",
+        "date": "10/12/2017",
+        "firstname":"Jose",
+        "lastname":"Villanueva",
+        "email":"josevillanueva@gmail.com"
+      },
+      {
+        "name": "doc11",
+        "description": "doc11",
+        "date": "10/12/2018",
+        "firstname":"Jose",
+        "lastname":"Villanueva",
+        "email":"josevillanueva@gmail.com"
+      },
+      {
+        "name": "doc12",
+        "description": "doc12",
+        "date": "10/10/2019",
+        "firstname":"Jose",
+        "lastname":"Villanueva",
+        "email":"josevillanueva@gmail.com"
+      },
+      {
+        "name": "doc13",
+        "description": "doc13",
+        "date": "10/04/2019",
+        "firstname":"Jose",
+        "lastname":"Villanueva",
+        "email":"josevillanueva@gmail.com"
+      },
+      {
+        "name": "doc14",
+        "description": "doc14",
+        "date": "10/12/2017",
+        "firstname":"Jose",
+        "lastname":"Villanueva",
+        "email":"josevillanueva@gmail.com"
       }
     ],
-    "clasificaciones": [
+    "authors": [
       {
-        "nombre": "Drama",
-        "id": 1
+        "name": "Ricardo Galan"
       },
       {
-        "nombre": "Comedia",
-        "id": 2
+        "name": "Jose Villanueva"
       },
       {
-        "nombre": "Documental",
-        "id": 3
+        "name": "Stefany Moreno"
       },
       {
-        "nombre": "Acción",
-        "id": 4
+        "name": "Gustavo Gardella"
+      },
+      {
+        "name": "Elias Villasmil"
       }
     ]
   }

@@ -1,0 +1,42 @@
+table {
+    border-radius: 10px;
+    width: 70%;
+    margin-left:15%;
+    background-color: white;
+  }
+.tablecontainer{
+  min-height:563px;
+}
+  
+  td, th {
+    width: 25%;
+  }
+  .pagination{
+    background-color:white;
+    padding-top:20px;
+    padding-left: 45%;
+    padding-right: 45%;
+    border:none;
+    margin-bottom: 0px;
+    padding-bottom: 20px;
+    cursor:pointer;
+
+    .page-link{
+        background-color:#e5e3e3;
+        color:#757575;
+        border:none;
+    }
+    .page-next{
+        margin-left:20px;
+        border-radius: 0px;
+    }
+    .page-previous{
+        margin-right:20px;
+        border-radius: 0px;
+    }
+}
+
+.page-active{
+  background-color:#333333 !important;
+  color:white !important;
+}

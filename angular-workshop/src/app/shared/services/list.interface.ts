@@ -1,6 +1,9 @@
 export interface List{
-    id:number,
+
     name:string,
-    director:string,
-    clasification:string,
+    description:string,
+    date:Date,
+    firstname:string,
+    lastname:string,
+    email:string
 }
