@@ -1,7 +1,6 @@
-import { Component, OnInit, Input, OnDestroy } from '@angular/core';
+import { Component, OnInit,OnDestroy } from '@angular/core';
 import { ListService } from 'src/app/shared/services/list.service';
 import { List } from 'src/app/shared/services/list.interface';
-import { DatePipe } from '@angular/common';
 import {ActivatedRoute } from '@angular/router';
 import { Subscription } from 'rxjs';
 
