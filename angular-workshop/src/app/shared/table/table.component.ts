@@ -26,6 +26,7 @@ export class TableComponent implements OnInit, OnDestroy {
   }
 
   ngOnInit() {
+    //Watch for router params so when there's a change it loads the publication of authors
     this.router.paramMap.subscribe(
       params=>{
         this.param=params.get('name');
@@ -37,6 +38,7 @@ export class TableComponent implements OnInit, OnDestroy {
   
 
   displayRows(i){
+    //displays rows depending on page
     let numberOfRow=Math.ceil((i+1)/10)
     if(this.pageActive==numberOfRow){
       return 'table-row';
@@ -46,6 +48,7 @@ export class TableComponent implements OnInit, OnDestroy {
   }
 
   changePages(param){
+    //changes pages 
     const num=Math.ceil(param/2);
     this.numPages=[];
     for(let i=1; i<=num; i++){
@@ -54,10 +57,12 @@ export class TableComponent implements OnInit, OnDestroy {
   }
 
   onClickPagination(e){
+    //sets active page
     this.pageActive=parseInt(e.srcElement.innerHTML);
   }
 
   onClickNext(limit){
+    //goes to next page
     if(this.pageActive+1 > limit){
       this.pageActive=1;
     }
@@ -68,7 +73,7 @@ export class TableComponent implements OnInit, OnDestroy {
   }
 
   onClickPrevious(limit){
-
+    //goes to previous page
     if(this.pageActive-1 < 1){
       this.pageActive= limit;
     }
@@ -78,6 +83,7 @@ export class TableComponent implements OnInit, OnDestroy {
   }
 
   checkPageActive(num){
+    //checks if page active
     if(this.pageActive==num.value){
       return "page-active";
     }else{
@@ -86,6 +92,7 @@ export class TableComponent implements OnInit, OnDestroy {
   }
 
   public sortByDueDate(): void {
+    //sorts date when header clicked
     this.publications.sort((a: List, b: List) => {
         let dateA=new Date(a.date);
         let dateB=new Date(b.date);
@@ -94,6 +101,7 @@ export class TableComponent implements OnInit, OnDestroy {
 }
 
 public loadPublications(){
+  //loads publications depending if is for all authors or just one
   this.isAuthorUrl=window.location.pathname.split('/').includes('authors');
   if(this.isAuthorUrl===false){
     this.sub=this.listService.getList().subscribe(
@@ -125,6 +133,7 @@ public loadPublications(){
     }
   }
   ngOnDestroy() {
+    //destroys subscription
     this.sub.unsubscribe();
   }
 }

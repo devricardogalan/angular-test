@@ -1,4 +1,10 @@
 
+<div *ngIf="isLoaded==false" class="wrap">
+  <div class="loading">
+    <div class="bounceball"></div>
+    <div class="text">NOW LOADING</div>
+  </div>
+</div>
 <div class="tablecontainer" *ngIf="isLoaded" >
     <table   class="table">
       <thead >

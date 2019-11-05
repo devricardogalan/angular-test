@@ -17,6 +17,7 @@ export class HeaderComponent implements OnInit{
   constructor(private listService:ListService, private router:Router) {}
 
   ngOnInit() {
+    //gets all authors for sidebar
     this.listService.getAuthors().subscribe(
       val=>{
         this.authors=val;
