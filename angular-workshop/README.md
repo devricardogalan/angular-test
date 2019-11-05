@@ -13,9 +13,9 @@ Run `npm run server` on Node.js command prompt for example, so you can have the 
 
 ### Prerequisites
 
-Node.js, check out https://nodejs.org/es/ \ 
-Angular CLI, check out https://cli.angular.io/ \
-Json-server, use command npm install -g json-server on Node.js command prompt \
+Node.js, check out https://nodejs.org/es/ <br/>
+Angular CLI, check out https://cli.angular.io/ <br/>
+Json-server, use command npm install -g json-server on Node.js command prompt <br/>
 
 ## Further help
 
