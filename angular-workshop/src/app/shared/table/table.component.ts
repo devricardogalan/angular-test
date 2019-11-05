@@ -84,7 +84,6 @@ export class TableComponent implements OnInit, OnDestroy {
 
   checkPageActive(num){
     //checks if page active
-    debugger;
     if(this.pageActive==num){
       return "page-active";
     }else{
